@@ -122,7 +122,7 @@ kotlin {
 
 android {
   namespace = "io.github.xxfast.nytimes.app"
-  compileSdk = 34
+  compileSdk = 35
   defaultConfig {
     minSdk = 25
     targetSdk = 34

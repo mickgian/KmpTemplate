@@ -1,0 +1,116 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# Gradle
+# ──────────────────────────────────────────────────────────────────────────────
+.gradle/
+build/                  # build artifacts
+!gradle/wrapper/gradle-wrapper.jar
+
+# Kotlin CLI / MPP
+.kotlin/                # Kotlin CLI caches
+*.klib                  # compiled klibs
+.idea/                  # IntelliJ project files
+out/                    # IntelliJ out
+
+# IntelliJ / Android Studio
+*.iml
+*.iws
+*.ipr
+.DS_Store
+*.hprof
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Android
+# ──────────────────────────────────────────────────────────────────────────────
+local.properties        # SDK path, keystore passwords
+captures/               # Studio screenshots
+.navigation/            # Studio navigation editor metadata
+*.apk
+*.ap_
+# Signing
+*.jks
+*.keystore
+
+# Android build outputs
+app/**/build/
+**/build/
+
+# Kotlin annotation processors
+kapt/
+ksp/
+
+# ──────────────────────────────────────────────────────────────────────────────
+# iOS / Xcode
+# ──────────────────────────────────────────────────────────────────────────────
+# Xcode
+DerivedData/
+build/
+*.pbxuser
+!default.mode1v3
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata/
+*.xcworkspace
+!default.xcworkspace
+*.xcworkspace/xcshareddata/
+*.xccheckout
+*.xcscmblueprint
+# CocoaPods
+Pods/
+Podfile.lock
+# Carthage
+Carthage/Build/
+# Swift Package Manager
+.build/
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+# Xcode archive
+*.xcarchive
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Web / Node / JS
+# ──────────────────────────────────────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+# lockfiles (if you use one, ignore the others)
+package-lock.json
+yarn.lock
+.pnpm-debug.log
+# bundler outputs
+dist/
+build/
+.webpack/
+.cache/
+.next/
+out/
+.vite/
+.public/
+coverage/
+.env
+.env.local
+.env.*.local
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Compose Desktop (JVM) / Java
+# ──────────────────────────────────────────────────────────────────────────────
+*.class
+**/out/
+**/target/
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Misc
+# ──────────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+*.log
+.vscode/
+.envrc
+.vagrant/

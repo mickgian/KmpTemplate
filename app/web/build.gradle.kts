@@ -1,4 +1,4 @@
-import org.jetbrains.kotlin.gradle.targets.js.dsl.ExperimentalWasmDsl
+import org.jetbrains.kotlin.gradle.ExperimentalWasmDsl
 
 plugins {
   kotlin("multiplatform")
@@ -31,10 +31,18 @@ kotlin {
         implementation(libs.decompose.router)
       }
     }
-  }
-}
 
-compose.experimental {
-  web.application {
+    val jsMain by getting {
+      dependencies {
+        implementation(libs.ktor.client.js)
+      }
+    }
+
+    val wasmJsMain by getting {
+      dependencies {
+        implementation(libs.ktor.client.js)
+      }
+    }
+
   }
 }

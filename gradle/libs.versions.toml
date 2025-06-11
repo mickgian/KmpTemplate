@@ -16,7 +16,7 @@ kstore = "1.0.0-SNAPSHOT"
 ktor = "3.1.3"
 molecule = "2.1.0"
 qdsfdhvh-image-loader = "1.8.3"
-wear-compose = "1.3.1"
+wear-compose = "1.4.1"
 
 [libraries]
 agp = { module = "com.android.tools.build:gradle", version.ref = "agp" }
